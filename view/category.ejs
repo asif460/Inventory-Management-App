@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= category.name %></title>
+</head>
+<body>
+  <h1>Items in "<%= category.name %>"</h1>
+  <ul>
+    <% items.forEach(item => { %>
+      <li><%= item.name %> (Qty: <%= item.quantity %>)</li>
+    <% }) %>
+  </ul>
+  <a href="/">Back to Home</a>
+</body>
+</html>
